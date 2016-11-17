@@ -1,0 +1,21 @@
+WhatCountriesInRegionIntent what countries are in {Region}
+WhatCountriesInRegionIntent what countries are located in {Region}
+WhatCountriesInRegionIntent which countries are in {Region}
+WhatCountriesInRegionIntent which countries are located in {Region}
+WhatCountriesInRegionIntent find me countries in {Region}
+WhatCountriesInRegionIntent find me countries that are in {Region}
+WhatCountriesInRegionIntent find me countries that are located in {Region}
+WhatCountriesInRegionIntent {Region} countries
+WhatCountriesInRegionIntent countries in {Region}
+WhatCountriesInRegionIntent countries {Region}
+
+HowManyCountriesInRegionIntent how many countries are located in {Region}
+HowManyCountriesInRegionIntent how many countries are in {Region}
+HowManyCountriesInRegionIntent how many countries in {Region}
+HowManyCountriesInRegionIntent how many are located in {Region}
+HowManyCountriesInRegionIntent how many are in {Region}
+HowManyCountriesInRegionIntent how many in {Region}
+HowManyCountriesInRegionIntent what is the number of countries in {Region}
+HowManyCountriesInRegionIntent number of countries in {Region}
+
+RegionOnlyIntent {Region}

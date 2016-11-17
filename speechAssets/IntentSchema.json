@@ -1,0 +1,40 @@
+{
+  "intents": [
+    {
+      "intent": "WhatCountriesInRegionIntent",
+      "slots": [
+        {
+          "name": "Region",
+          "type": "REGIONS"
+        }
+      ]
+    },
+    {
+      "intent": "HowManyCountriesInRegionIntent",
+      "slots": [
+        {
+          "name": "Region",
+          "type": "REGIONS"
+        }
+      ]
+    },
+    {
+      "intent": "RegionOnlyIntent",
+      "slots": [
+        {
+          "name": "Region",
+          "type": "REGIONS"
+        }
+      ]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
