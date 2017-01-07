@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>org.wykapedia.ask</groupId>
+    <artifactId>world-countries-alexa-skill-kit</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>World Countries</name>
+    <description>World Countries Alexa Skill Kit</description>
+    <url>https://www.alexaskillstore.com/World-Countries/40878</url>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <s3.bucket>amazon-alexa-skills</s3.bucket>
+        <s3.bucket.releases>releases</s3.bucket.releases>
+        <s3.bucket.snapshots>snapshots</s3.bucket.snapshots>
+    </properties>
+    
+    <build>
+        
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <descriptors>
+                        <descriptor>assembly.xml</descriptor>
+                    </descriptors>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>assemble</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        
+        <extensions>
+            <extension>
+                <groupId>org.springframework.build</groupId>
+                <artifactId>aws-maven</artifactId>
+                <version>5.0.0.RELEASE</version>
+            </extension>
+        </extensions>
+        
+    </build>
+    
+    <distributionManagement>
+        <repository>
+            <id>aws-release</id>
+            <name>AWS Release Repository</name>
+            <url>s3://${s3.bucket}/${s3.bucket.releases}</url>
+        </repository>
+        <snapshotRepository>
+            <id>aws-snapshot</id>
+            <name>AWS Snapshot Repository</name>
+            <url>s3://${s3.bucket}/${s3.bucket.snapshots}</url>
+        </snapshotRepository>
+    </distributionManagement>
+    
+</project>

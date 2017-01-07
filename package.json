@@ -1,0 +1,23 @@
+{
+  "name": "world-countries-alexa-skill-kit",
+  "version": "1.0.4",
+  "description": "World Countries Alexa Skill Kit",
+  "main": "src/index.js",
+  "contributors": [
+    "Brian Wyka"
+  ],
+  "dependencies": {
+    "aws-sdk": "^2.4.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wykapedia/world-countries-alexa-skill-kit.git"
+  },
+  "keywords": [
+    "World",
+    "Countries"
+  ],
+  "author": "wykapedia.org",
+  "license": "MIT"
+}
